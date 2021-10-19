@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Popover, Transition } from "@headlessui/react";
 import DarkModeSwitch from "./darkModeSwitch";
-import { FormattedMessage, useIntl } from "react-intl";
+import { useIntl } from "react-intl";
 
 type NavbarProps = {
   activePage: string;

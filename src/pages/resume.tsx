@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import profilePic from "../../public/images/alexis.png";
 import { enforceMode } from "../lib/darkMode";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

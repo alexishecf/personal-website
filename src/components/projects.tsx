@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Section from "./section";
 
-import Image from "next/image";
 import { FormattedMessage, useIntl } from "react-intl";
 
 export default function Projects() {
