@@ -28,8 +28,8 @@ export default function Hero() {
           <div className="absolute block lg:w-56 lg:h-56 sm:w-48 sm:h-48 w-40 h-40 left-3 top-3 bg-transparent border-4 border-dashed border-gray-300 dark:border-gray-300 transform group-hover:rotate-12 transition duration-300"></div>
 
           <img
-            src="images/alexis.png"
-            className="absolute z-10"
+            src="images/alexis.jpg"
+            className="absolute z-10 object-contain w-full lg:h-56 sm:h-48 h-40"
             alt="Picture of the author"
           />
         </div>
