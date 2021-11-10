@@ -8,13 +8,9 @@ type HeaderProps = {
 
 export default function Header({ children, activePage }: HeaderProps) {
   return (
-    <div>
-      <div className="relative dark:bg-gray-800 bg-gray-50 ">
-        <div className="max-w-6xl mx-auto">
-          <Navbar activePage={activePage} />
-          {children}
-        </div>
-      </div>
+    <div className="relative dark:bg-gray-800 bg-gray-50 ">
+      <Navbar activePage={activePage} />
+      {children}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import "../styles/globals.css";
+import "../styles/custom.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { IntlProvider } from "react-intl";
 import { messagesFr } from "../../lang/fr-FR";

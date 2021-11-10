@@ -1,16 +1,8 @@
 /* ./styles/globals.css */
+
+/* Do not write css in there directly, or it will recompile whole tailwind css and take 8+ seconds */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-a.inline-link {
-    @apply text-indigo-600 dark:text-indigo-400 hover:opacity-60
-}
-
-body  { 
-    @apply bg-white
-}
-
-body.dark  { 
-    @apply bg-gray-900
-}
