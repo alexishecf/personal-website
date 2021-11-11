@@ -133,7 +133,7 @@ export default function Resume() {
                     "PHP",
                     "JavaScript",
                     "SQL",
-                    "TailwindCSS",
+                    "GraphQL",
                     "React",
                     "Next.js",
                     "Node.js",
@@ -153,7 +153,7 @@ export default function Resume() {
             </div>
           </div>
           <div>
-            <div className="ml-8 lg:ml-28 mt-12 print:ml-10">
+            <div className="ml-8 lg:ml-28 mt-10 print:ml-10">
               <h1 className="text-md uppercase text-gray-400 tracking-wider  my-6">
                 <FormattedMessage id="resume_educationLabel" />
               </h1>
@@ -198,7 +198,7 @@ export default function Resume() {
           </div>
 
           <div>
-            <div className="ml-8 lg:ml-28 mt-14 print:ml-10">
+            <div className="ml-8 lg:ml-28 mt-10 print:ml-10">
               <h1 className="text-md uppercase text-gray-400 tracking-wider my-6 ">
                 <FormattedMessage id="resume_workExperienceLabel" />
               </h1>
@@ -253,9 +253,6 @@ export default function Resume() {
                     <li className="py-1">
                       <FormattedMessage id="resume_workExperience1UnorderedListEl6" />
                     </li>
-                    <li className="py-1">
-                      <FormattedMessage id="resume_workExperience1UnorderedListEl7" />
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -263,7 +260,7 @@ export default function Resume() {
           </div>
 
           <div>
-            <div className="ml-8 lg:ml-28 mt-16 pb-28 print:pb-0 print:ml-10">
+            <div className="ml-8 lg:ml-28 mt-10 pb-28 print:pb-0 print:ml-10">
               <h1 className="text-md uppercase text-gray-400 tracking-wider mt-4 mb-6">
                 <FormattedMessage id="resume_languagesLabel" />
               </h1>
