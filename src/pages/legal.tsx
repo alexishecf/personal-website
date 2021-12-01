@@ -1,9 +1,5 @@
 import React from "react";
 
-import Container from "../components/container";
-import Footer from "../components/footer";
-import Header from "../components/header";
-
 import Head from "next/head";
 import { FormattedMessage, useIntl } from "react-intl";
 
@@ -16,8 +12,6 @@ export default function Legal() {
         <title>{intl.formatMessage({ id: "legal_title" })}</title>
       </Head>
 
-      <Header activePage="Legal" />
-      <Container smallerMarginsAndPaddings={true}>
         <div className="pb-32 text-gray-900 dark:text-gray-200">
           <h1 className="text-2xl tracking-tight font-extrabold md:text-3xl">
             <FormattedMessage id="legal_legalLabel" />
@@ -111,9 +105,6 @@ export default function Legal() {
             respecte pas les règles ainsi définies.
           </p>
         </div>
-      </Container>
-
-      <Footer />
     </div>
   );
 }

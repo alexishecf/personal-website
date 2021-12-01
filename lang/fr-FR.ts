@@ -1,119 +1,60 @@
 export const messagesFr = {
   // Header
-  header_home: "Accueil",
-  header_blog: "Blog",
+  header_about: "About",
+  header_work: "Work",
   header_contact: "Contact",
+  header_bio:
+    "Passionate software developer building web applications from France.",
 
   // Index
   index_title: "Alexis Hecfeuille | Accueil",
-  index_heroBio: "Je suis un développeur web full-stack situé en France",
-  index_contactMe: "Contactez moi",
-  index_about:
-    "Je suis un développeur basé en France et passionné d'informatique. Je travaille principalement sur des projets web en tant que développeur full-stack.",
-  index_aboutLabel: "À propos",
-  index_thingsIveWorkedOn: "Projets",
-  index_contact: "Contact",
-  index_technicalSkills: "Compétences techniques",
-  index_softSkills: "Compétences générales",
 
   // About
-  about_softSkill1: "Résolution de problèmes",
-  about_softSkill2: "Adaptabilité",
-  about_softSkill3: "Créativité",
-  about_softSkill4: "Souci du détail",
+  about_title: "About",
+  about_paragraph: "Hi, I'm Alexis Hecfeuille, a passionate software developer based in France and working on web projects as a full stack developer.{br}{br}When I was around 12 years old, I always had ideas of things to build or improve, mainly from video games I played. The will to turn these ideas into real things is what got me interested in computer science and development. Later, I studied computer science at the university of Lille, where I got a Master of Science.{br}{br}During my studies, I co-founded a company called hologame, which develops a turnkey solution of free-roam virtual reality arena and sells it to entertainment venues. It's kind of an updated version of the laser tag concept, where we kept the good aspects (i.e. immersion and free-roam) and added the infinite possibilities of virtual reality. I was the technical co-founder of the project and developed the networked virtual reality game as well as the various web applications used by arena operators and end users to play it.{br}{br}I love experimenting and learning new things. A few topics I'd like to dig into are cryptography, home automation, bioinformatics and human augmentation.",
+  about_skills: "Skills",
+  about_skillsTechnical: "Technical",
+  about_resume: "Resume",
+  about_contact: "Contact",
 
-  // Projects
-  projects_project2: "Site personnel",
-  projects_project1OneLiner: "Arènes en réalité virtuelle et déplacement libre",
-  projects_project2OneLiner: "Site personnel, portfolio et blog",
-
+  // Work
+  work_showcase: "Showcase",
+  work_role: "Role",
+  work_date: "Date",
+  work_location: "Location",
+  work_stack: "Stack",
+  work_website: "Website",
+  work_hologame_short: "Free-roam virtual reality arenas",
+  work_hologame_role: "Technical co-founder",
+  work_hologame_date: "Sep 2018 – Oct 2021",
+  work_hologame_location: "Tourcoing, France",
+  work_hologame_paragraph: "Hologame is the company I co-founded while I was studying computer science at the University of Lille. It develops a turnkey solution of free-roam virtual reality arena and sells it to entertainment venues.{br}{br}The idea was born out of the frustration we felt playing laser tag, the concept was fun but it was severely outdated and very limited in environment possibilities as well as in game modes and opponent types, which were strictly limited to other human players. With the significant advancements in virtual reality and the emergence of standalone HMDs with six degrees of freedom, I thought it would be a good idea to mix it with the laser tag concept to provide a highly immersive experience with an infinite amount of possibilities.{br}{br}My role was that of technical co-founder, I built the initial prototype which consisted of a VR POC game developed with Unity, and later I built the first marketable version of hologame: the networked free-roam VR game, the web application used by the arena operators to manage the sessions, the authentication application used by the end-users, the backend used to connect all these applications, the website and some other internal applications.{br}{br}Hologame is played on large surfaces of 300+m², in a physically empty but virtually filled arena, where you must either team up against hordes of zombies or fight each other.",
   // Contact
+  contact_title: "Contact",
   contact_paragraph:
-    "Vous pouvez me contacter par mail {mail} ou via {linkedInMessage}.",
-
-  // Resume:About
-  resume_title: "Alexis Hecfeuille | CV",
-  resume_jobTitle: "Développeur web",
-  resume_skillsLabel: "Compétences",
-
-  // Resume:Education
-  resume_educationLabel: "Formation",
-  resume_education2Diploma: "Master, Informatique",
-  resume_education2Courses:
-    "Cours: Algorithmique et Complexité, Architecture et conception des systèmes d'exploitation, Programmation orientée objet, Systèmes multi-agents, Vision par ordinateur, Programmation 3D (OpenGL / C++ / WebGL / JS), Réalité Virtuelle (Unity), Interaction Homme–Machine, Systèmes embarqués (FPGA / VHDL), Calcul distribué.  ",
-  resume_education2University: "Université de Lille",
-  resume_education2Paragraph: "",
-  resume_education1Diploma: "Licence, Informatique",
-  resume_education1Courses:
-    "Cours: Automates et langages, Conception orientée objet, Programmation système, Algorithmique et recherche opérationnelle, Base de données relationnelle, Programmation fonctionnelle, Réseaux, Logique, Algèbre linéaire, Algorithmes, Cryptographie, Technologies du web, Structures de données, Probabilités et statistiques, Mathématiques discrètes, Analyse (mathématiques).",
-  resume_education1University: "Université de Lille",
-  resume_education1Paragraph: "",
-
-  // Resume:Work Experience
-  resume_workExperienceLabel: "Expérience",
-  resume_workExperience1CompanyDesc:
-    "Start-up technologique développant et vendant des arènes en réalité virtuelle, multijoueur et déplacement libre à des centres de loisirs",
-  resume_workExperience1JobTitle: "Co-fondateur technique",
-  resume_workExperience1Date: "Sep 2018 - Oct 2021",
-  resume_workExperience1UnorderedListEl1:
-    "Conception du shooter VR en déplacement libre et multijoueur à destination de casques VR autonomes en utilisant Unity / C#",
-  resume_workExperience1UnorderedListEl1_1:
-    "Optimisé pour fonctionner de façon fluide avec jusqu'à 8 joueurs et 40+ PNJs simultanément",
-  resume_workExperience1UnorderedListEl1_2:
-    "Jouable sur une surface physique de 300+ m² et sur une surface virtuelle de 1+ km²",
-  resume_workExperience1UnorderedListEl2:
-    "Création de l'application de gestion en .NET/C# utilisée par nos clients pour lancer et monitorer les parties",
-  resume_workExperience1UnorderedListEl3:
-    "Développement de l'application web d'authentification pour les utilisateurs finaux avec React et TailwindCSS",
-  resume_workExperience1UnorderedListEl3_1:
-    "Permet l'authentification des utilisateurs finaux sur des tablettes sans intervention de l'opérateur, réduisant le temps de préparation des parties",
-  resume_workExperience1UnorderedListEl3_2:
-    "Réduit la charge logistique en automatisant l'association joueur—casque et en suivant l'état de configuration de chaque joueur",
-  resume_workExperience1UnorderedListEl4:
-    "Création d'une application web pour analyser les données commerciales et opérationnelles avec Next.js et MySQL",
-  resume_workExperience1UnorderedListEl5:
-    "Implémentation d'une API REST avec PHP/CodeIgniter pour rendre possible la communication entre les différents éléments de la solution (Casques VR, Application de gestion, Authentification...)",
-  resume_workExperience1UnorderedListEl6:
-    "Rencontres avec des entrepreneurs du loisir pour faire des démonstrations techniques de la solution dans le but de la vendre",
-  resume_workExperience1UnorderedListEl7:
-    "Présentation de la solution dans différents salons pour obtenir des retours de la part d'utilisateurs finaux et pour rencontrer des clients potentiels",
-
-  // Resume:Languages
-  resume_languagesLabel: "Langues",
-  resume_language1: "Français",
-  resume_language1Proficiency: "natif",
-  resume_language2: "Anglais",
-  resume_language2Proficiency: "courant{br}(TOEIC 960)",
-  resume_language3: "Espagnol",
-  resume_language3Proficiency: "notions",
+    "You can either mail me at {mail} or contact me on {linkedInMessage}.",
 
   // Footer
-  footer_paragraph:
-    "© Copyright {year} Alexis Hecfeuille. Tous droits réservés.",
-  footer_legal: "Mentions légales",
-
-  // Blog
-  blog_title: "Alexis Hecfeuille | Blog",
-  blog_blogLabel: "Blog",
-  blog_paragraph: "Aucun article pour le moment.",
+  footer_paragraph: "© {year} Alexis Hecfeuille",
+  footer_legal: "Legal",
 
   // Legal
-  legal_title: "Alexis Hecfeuille | Mentions légales",
-  legal_legalLabel: "Mentions légales",
-  legal_identity: "Identité",
-  legal_hosting: "Hébergement",
-  legal_information: "Informations",
-  legal_interactivity: "Interactivité",
-  legal_ip: "Propriété intellectuelle",
-  legal_links: "Liens",
+  legal_title: "Alexis Hecfeuille | Legal",
+  legal_legalLabel: "Legal",
+  legal_identity: "Identity",
+  legal_hosting: "Hosting",
+  legal_information: "Information",
+  legal_interactivity: "Interactivity",
+  legal_ip: "Intellectual property",
+  legal_links: "Links",
 
   // error 404
-  e404_title: "Alexis Hecfeuille | Erreur 404",
-  e404_label: "Erreur 404",
-  e404_paragraph: "Cette page n'existe pas ou plus.",
+  e404_title: "Alexis Hecfeuille | Error 404",
+  e404_label: "Error 404",
+  e404_paragraph: "The requested page was not found on this server.",
 
   // error 500
-  e500_title: "Alexis Hecfeuille | Erreur 500",
-  e500_label: "Erreur 500",
-  e500_paragraph: "Erreur interne, veuillez réessayer plus tard.",
+  e500_title: "Alexis Hecfeuille | Error 500",
+  e500_label: "Error 500",
+  e500_paragraph: "Internal error, please try again later.",
 };

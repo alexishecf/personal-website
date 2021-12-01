@@ -29,7 +29,7 @@ class MyDocument extends Document {
           <meta property="og:locale:alternate" content="fr_FR" />
           <meta property="og:site_name" content="Alexis Hecfeuille" />
         </Head>
-        <body className="min-h-screen">
+        <body>
           <Main />
           <NextScript />
         </body>

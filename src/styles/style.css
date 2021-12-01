@@ -1,0 +1,521 @@
+/* RESET CSS */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------------------- */
+:root {
+  --text-color: #000;
+  --body-bg: #fff;
+  --black-bg: #000;
+  --white-fg: #fff;
+}
+
+.dark-mode {
+  --body-bg: #000;
+  --text-color: #fff;
+  --black-bg: #050505;
+  --white-fg: #ddd;
+}
+
+* {
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+body {
+  font-family: Roboto;
+  padding: 0 10px;
+  background: var(--body-bg);
+  color: var(--text-color);
+}
+
+p {
+  letter-spacing: 0.8px;
+}
+
+a {
+  color: var(--text-color);
+}
+
+header {
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+  margin: 40px auto 100px auto;
+}
+
+header h1 {
+  font-size: 4em;
+  line-height: 3.4rem;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+header p {
+  color: #909090;
+}
+
+header nav {
+  max-width: 1100px;
+  width: 100%;
+  text-align: right;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 0.975em;
+  margin: 0 15px;
+  transition: all 0.15s;
+  font-weight: 500;
+  cursor:pointer;
+}
+
+header nav a:hover {
+  opacity: 50%;
+}
+
+header nav a .moon {
+  display: inline;
+}
+header nav a .sun {
+  display: none;
+}
+
+body.dark-mode header nav a .sun {
+  display: inline;
+}
+
+body.dark-mode header nav a .moon {
+  display: none;
+}
+
+header div.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+header div.hero div.short-intro {
+  margin-right: 100px;
+}
+
+header div.hero div.short-intro p {
+  max-width: 300px;
+  letter-spacing: 0.012em;
+  display: inline-flex;
+}
+
+header div.hero div.short-intro div.social {
+  margin-top: 20px;
+}
+
+header div.hero div.short-intro div.social a,
+header div.hero div.short-intro div.social div.resume-link {
+  font-size: 1.1em;
+  margin: 0 8px;
+  color: var(--text-color);
+  transition: all 0.1s;
+  display: inline;
+}
+
+header div.hero div.short-intro div.social a:hover {
+  opacity: 0.5;
+}
+header div.hero div.short-intro div.social div.resume-link {
+  position: relative;
+}
+header div.hero div.short-intro div.social div.resume-link svg:hover {
+  opacity: 0.5;
+}
+
+header div.hero div.short-intro div.social div.resume-link svg {
+  cursor: pointer;
+}
+
+header div.hero div.short-intro div.social div.resume-link div.languages {
+  width: auto;
+  display: inline-block;
+  display: none;
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  font-size: 0.85em;
+}
+
+header
+  div.hero
+  div.short-intro
+  div.social
+  div.resume-link
+  div.languages
+  a.lang {
+  width: 100%;
+  padding: 5px 14px;
+  text-align: center;
+  display: block;
+  margin-top: 5px;
+  background-color: var(--black-bg);
+  color: var(--white-fg);
+  border-radius: 10px;
+  transition: all 0.15s;
+  font-weight: 500;
+  text-decoration: none;
+}
+header
+  div.hero
+  div.short-intro
+  div.social
+  div.resume-link
+  div.languages
+  div.lang:hover {
+  opacity: 0.5;
+}
+
+header div.hero div.photo {
+  width: auto;
+  overflow: hidden;
+  max-height: 450px;
+}
+
+header div.hero div.photo img {
+  width: auto;
+  height: 100%;
+  max-height: 450px;
+  border-radius: 30px;
+  filter: grayscale(100%);
+}
+
+section h2 {
+  font-size: 2.2em;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+section h3 {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+section h4 {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+section div.closed,
+section div.open {
+  border-radius: 10px;
+}
+
+section div.closed {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+section div.open {
+  opacity: 0;
+  padding: 20px 40px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+section div.buttons {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+section div.buttons a.button {
+  border-radius: 80px;
+  padding: 10px 20px;
+  margin: 0px 4px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.25s;
+  position: relative;
+}
+
+section div.buttons a.button:hover {
+  opacity: 0.5;
+}
+
+section ul {
+  list-style: none;
+  padding: 0 0 0 15px;
+  margin-bottom: 25px;
+}
+
+section ul li {
+  display: inline-block;
+  margin-right: 25px;
+  padding: 5px 0;
+  opacity: 0;
+}
+
+section.about {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: #00397c;
+}
+
+section.about div.buttons a.button {
+  background: #d7e3f5;
+  color: #1c4c85;
+}
+
+section.about h2 {
+  margin-bottom: 20px;
+}
+
+section.about h3 {
+  margin-bottom: 10px;
+}
+
+section.about h4 {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+section.about p {
+  max-width: 600px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+section.about .closed,
+section.about .open {
+  background: #eff5fd;
+}
+
+section.work,
+section.contact {
+  max-width: 1024px;
+  position: relative;
+  margin: 100px auto;
+}
+
+section.work p {
+  max-width: 600px;
+}
+
+
+section.work section div.bottom-cover {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-position: center center;
+}
+section.work section div.bottom-cover div.buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.work section {
+  padding-bottom: 300px;
+}
+
+section.work section .open {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+section.work section .open div.wrapper {
+  display: flex;
+  margin: 40px 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+section.work section .open div.wrapper div.item {
+  width: 33.3%;
+}
+
+section.work section h3.stack-title {
+  margin: 15px 0;
+}
+
+section.work section.work-hologame {
+  position: relative;
+  margin: 50px 0;
+}
+section.work section.work-hologame h2 {
+  font-family: Montserrat;
+}
+
+section.work section.work-hologame .closed,
+section.work section.work-hologame .open {
+  background: var(--black-bg);
+  color: var(--white-fg);
+}
+
+section.work section.work-hologame div.bottom-cover div.buttons a.button {
+  background: var(--black-bg);
+  color: var(--white-fg);
+}
+section.work section.work-hologame div.bottom-cover div.buttons a.button:hover {
+  opacity: 0.8;
+}
+
+section.contact h2 {
+  margin-bottom: 20px;
+}
+
+footer {
+  border-top: 1px solid #eee;
+  padding: 30px 0 30px 0
+}
+
+footer div {
+  margin: 0 auto;
+  max-width: 1024px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+  section div.open {
+    padding: 20px 20px;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header div.hero {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header div.hero div.short-intro {
+    order: 2;
+    flex-basis: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-top: 40px;
+  }
+
+  header div.hero div.photo {
+    order: 1;
+    height: 300px;
+    flex-basis: 100%;
+    width: auto;
+    text-align: center;
+  }
+
+  header div.hero div.photo img {
+    height: 300px;
+    display: inline-flex;
+  }
+
+  header div.hero div.short-intro div.social div.resume-link div.languages {
+    top: 25px;
+    left: -50px;
+  }
+  section.work section .open div.wrapper div.item {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
