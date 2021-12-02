@@ -86,7 +86,7 @@ select {
 .dark-mode {
   --body-bg: #000;
   --text-color: #fff;
-  --black-bg: #050505;
+  --black-bg: #111;
   --white-fg: #ddd;
 }
 
