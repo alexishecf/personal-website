@@ -78,7 +78,15 @@ export default function about() {
           ))}
         </ul>
         <div className="buttons">
-          <a className="button" href="#">
+          <a
+            className="button"
+            href="#hero"
+            onClick={() =>
+              (document.querySelector<HTMLElement>(
+                "#hero .resume-link .languages"
+              ).style.display = "block")
+            }
+          >
             <FormattedMessage id="about_resume" />
           </a>
           <a className="button" href="#">

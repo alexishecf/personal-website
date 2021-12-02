@@ -110,7 +110,7 @@ export default function workHologame() {
 
         <div
           className="bottom-cover"
-          style={{ background: "url('images/project_hologame.jpg')" }}
+          style={{ background: "url('images/project_hologame_hq.jpg')" }}
         >
           <div className="buttons">
             <a className="button" href="https://hologame.fr/" target="_blank">

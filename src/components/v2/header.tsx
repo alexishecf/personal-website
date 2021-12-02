@@ -20,10 +20,7 @@ export default function header() {
   const resumeLanguagesContainer = useRef(null);
 
   const onResumeClick = () => {
-    resumeLanguagesContainer.current.style.display =
-      resumeLanguagesContainer.current.style.display === "block"
-        ? "none"
-        : "block";
+    resumeLanguagesContainer.current.style.display = "block";
   };
 
   useEffect(() => {
@@ -68,7 +65,7 @@ export default function header() {
         </a>
       </nav>
 
-      <div className="hero" ref={heroContainer}>
+      <div className="hero" id="hero" ref={heroContainer}>
         <div className="short-intro">
           <h1>
             Alexis
